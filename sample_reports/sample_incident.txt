@@ -1,0 +1,72 @@
+===============================
+INCIDENT RESPONSE REPORT
+===============================
+
+Incident ID: IR-2026-001
+Date: 18-07-2026
+Analyst: Yash Tamboli
+
+Summary:
+A phishing email was received by multiple employees. One employee clicked
+the malicious link and downloaded a suspicious file. Network logs show
+communication with several external IP addresses.
+
+---------------------------------
+Email Information
+---------------------------------
+
+From: attacker123@evil-domain.com
+To: employee@company.com
+CC: security.team@company.com
+
+Subject: Urgent Password Reset
+
+The email instructed the employee to visit the following website:
+
+https://secure-login-update.com/login
+
+The employee also received another email from:
+
+support@fakebank.org
+
+---------------------------------
+Network Activity
+---------------------------------
+
+Source IP:
+192.168.1.15
+
+Destination IPs:
+45.33.32.156
+103.21.58.10
+8.8.8.8
+
+Additional suspicious server:
+185.220.101.5
+
+---------------------------------
+URLs Found
+---------------------------------
+
+https://secure-login-update.com/login
+http://malicious-site.net/download/payload.exe
+https://drive.fakefiles.org/document/update
+https://company.com/security/report
+xyz
+---------------------------------
+Notes
+---------------------------------
+
+The attacker attempted to contact the victim again using
+attacker123@evil-domain.com.
+
+Another suspicious email:
+admin@malware-test.net
+
+The following IP appeared multiple times:
+
+45.33.32.156
+103.21.58.10
+192.168.1.15
+
+End of Report.
