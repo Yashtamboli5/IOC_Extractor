@@ -2,71 +2,85 @@
 INCIDENT RESPONSE REPORT
 ===============================
 
-Incident ID: IR-2026-001
-Date: 18-07-2026
+Incident ID: IR-2026-002
+Date: 20-07-2026
 Analyst: Yash Tamboli
 
 Summary:
-A phishing email was received by multiple employees. One employee clicked
-the malicious link and downloaded a suspicious file. Network logs show
-communication with several external IP addresses.
-
----------------------------------
-Email Information
----------------------------------
-
-From: attacker123@evil-domain.com
-To: employee@company.com
-CC: security.team@company.com
-
-Subject: Urgent Password Reset
-
-The email instructed the employee to visit the following website:
-
-https://secure-login-update.com/login
-
-The employee also received another email from:
-
-support@fakebank.org
+The SOC received an alert about suspicious outbound network traffic from an
+employee workstation. Investigation revealed connections to multiple external
+servers, a phishing email, and indicators associated with malware activity.
 
 ---------------------------------
 Network Activity
 ---------------------------------
 
 Source IP:
-192.168.1.15
+192.168.1.10
 
-Destination IPs:
-45.33.32.156
-103.21.58.10
+Destination IP:
+185.199.110.153
+
+Additional IPs:
 8.8.8.8
-
-Additional suspicious server:
-185.220.101.5
+1.1.1.1
 
 ---------------------------------
-URLs Found
+Email Information
 ---------------------------------
 
-https://secure-login-update.com/login
-http://malicious-site.net/download/payload.exe
-https://drive.fakefiles.org/document/update
-https://company.com/security/report
-xyz
+From:
+attacker@example.com
+
+To:
+employee@company.com
+
+Subject:
+Security Verification Required
+
+---------------------------------
+Web Activity
+---------------------------------
+
+Website:
+https://github.com
+
+Additional URL:
+https://microsoft.com/security
+
+---------------------------------
+Domain Names
+---------------------------------
+
+microsoft.com
+github.com
+example.com
+
+---------------------------------
+File Hashes
+---------------------------------
+
+MD5:
+44d88612fea8a8f36de82e1278abb02f
+
+SHA1:
+3395856ce81f2b7382dee72602f798b642f14140
+
+SHA256:
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+---------------------------------
+Vulnerability
+---------------------------------
+
+CVE-2025-12345
+
 ---------------------------------
 Notes
 ---------------------------------
 
-The attacker attempted to contact the victim again using
-attacker123@evil-domain.com.
-
-Another suspicious email:
-admin@malware-test.net
-
-The following IP appeared multiple times:
-
-45.33.32.156
-103.21.58.10
-192.168.1.15
+The attacker attempted to download a payload from GitHub and communicate
+with external infrastructure. The collected indicators will be used to
+enhance the IOC Extractor in Phase 2.
 
 End of Report.
