@@ -7,8 +7,13 @@ IOC Extractor is a Python command-line tool that extracts Indicators of Compromi
 I created this project as part of my cybersecurity learning journey to improve my Python programming skills and understand how SOC (Security Operations Center) analysts work with incident reports. This project will continue to grow with new features in future phases.
 
 ---
+## Current Version
 
-## Phase 1 Features
+**Phase 2 (In Progress)**
+
+---
+
+## Features
 
 Currently, the tool can extract:
 
@@ -79,13 +84,20 @@ https://google.com
 IOC-Extractor/
 │── extractor.py
 │── README.md
+│── LICENSE
+│── sample_reports/
+│── screenshots/
+└── tests/
 ```
 
 ---
 
-## Future Improvements
+## Roadmap
 
-This project is being developed step by step. In the upcoming phases, I plan to add:
+- ✅ Phase 1 Completed
+- 🚧 Phase 2 In Progress
+
+Upcoming features:
 
 * Domain Name Extraction
 * MD5, SHA1 and SHA256 Hash Extraction
