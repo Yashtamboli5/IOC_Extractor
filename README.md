@@ -192,13 +192,13 @@ Example:
 
 ```text
 screenshots/
-└── Phase 3 Output.png
+└── Phase 3 .CSV_File OUPUT.png
 ```
 
 Then add:
 
 ```markdown
-![Phase 3 Output](screenshots/Phase%203%20Output.png)
+![Phase 3 .CSV_File OUPUT](screenshots/Phase%203%20Output.png)
 ```
 
 ---
