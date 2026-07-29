@@ -4,9 +4,9 @@
 
 IOC Extractor is a Python command-line tool that extracts Indicators of Compromise (IOCs) from incident reports.
 
-The tool supports multiple file formats and automatically extracts common cybersecurity indicators such as IP addresses, email addresses, URLs, domains, file hashes, and CVE identifiers.
+The tool supports multiple file formats and automatically extracts common cybersecurity indicators such as IP addresses, email addresses, URLs, domain names, file hashes, and CVE identifiers.
 
-I built this project as part of my cybersecurity learning journey to improve my Python programming skills, work with regular expressions (Regex), and understand how SOC (Security Operations Center) analysts investigate incident reports.
+I built this project as part of my cybersecurity learning journey to improve my Python programming skills, work with Regular Expressions (Regex), and understand how Security Operations Center (SOC) analysts investigate incident reports.
 
 ---
 
@@ -18,7 +18,7 @@ I built this project as part of my cybersecurity learning journey to improve my 
 
 ## Features
 
-The tool can extract the following IOCs:
+The tool can extract the following Indicators of Compromise (IOCs):
 
 - IPv4 Addresses
 - Email Addresses
@@ -41,7 +41,7 @@ Additional Features:
 
 ## Supported File Formats
 
-The program can read the following file types:
+The program supports the following file formats:
 
 - TXT
 - PDF
@@ -84,7 +84,7 @@ git clone https://github.com/Yashtamboli5/IOC_Extractor.git
 Go to the project folder:
 
 ```bash
-cd IOC-Extractor
+cd IOC_Extractor
 ```
 
 Install the required packages:
@@ -109,7 +109,7 @@ Run the program:
 python extractor.py
 ```
 
-The program will ask for the full path of the incident report.
+The program will ask you to enter the full path of the incident report.
 
 Example:
 
@@ -186,27 +186,14 @@ CVE-2025-12345
 
 ### Phase 3 Output
 
-> Add a screenshot after testing the program with one of the supported file formats (PDF, DOCX, CSV, JSON, or LOG).
-
-Example:
-
-```text
-screenshots/
-└── Phase 3 .CSV_File OUPUT.png
-```
-
-Then add:
-
-```markdown
-![Phase 3 .CSV_File OUPUT](screenshots/Phase%203%20.CSV_File%20OUPUT.png)
-```
+![Phase 3 Output](screenshots/Phase%203%20.CSV_File%20OUPUT.png)
 
 ---
 
 ## Project Structure
 
 ```text
-IOC-Extractor/
+IOC_Extractor/
 │
 ├── extractor.py
 ├── README.md
@@ -214,17 +201,19 @@ IOC-Extractor/
 ├── LICENSE.txt
 │
 ├── sample_reports/
-│   ├── sample_incident.txt
-│   ├── sample_incident.pdf
-│   ├── sample_incident.docx
-│   ├── sample_incident.csv
-│   ├── sample_incident.json
-│   └── sample_incident.log
+│   ├── Incident_Report_1.docx
+│   ├── Incident_Report_2.pdf
+│   ├── Incident_Report_3.json
+│   ├── Incident_Report_4.csv
+│   └── Incident_Report_5.log
 │
 ├── screenshots/
+│   ├── Phase 1 File Is Empty.png
+│   ├── Phase 1 File Not Found.png
+│   ├── Phase 1 File Path.png
 │   ├── Phase 1 OUTPUT.png
 │   ├── Phase 2 Output.png
-│   └── Phase 3 Output.png
+│   └── Phase 3 .CSV_File OUPUT.png
 │
 └── tests/
 ```
@@ -258,12 +247,12 @@ This project helped me practice:
 - Python Programming
 - Regular Expressions (Regex)
 - File Handling
-- Working with PDF files
-- Working with DOCX files
-- Reading JSON data
+- Reading PDF files
+- Reading DOCX files
 - Reading CSV files
-- Modular Programming
+- Reading JSON files
 - Error Handling
+- Modular Programming
 - Git & GitHub Workflow
 - Cybersecurity Fundamentals
 
@@ -298,4 +287,4 @@ Cybersecurity Student | Python Learner | SOC Enthusiast
 
 This project is licensed under the MIT License.
 
-See the LICENSE file for more information.
+See the LICENSE.txt file for more information.
