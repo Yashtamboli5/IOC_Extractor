@@ -78,7 +78,7 @@ Python Libraries:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/IOC-Extractor.git
+git clone https://github.com/Yashtamboli5/IOC_Extractor.git
 ```
 
 Go to the project folder:
