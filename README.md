@@ -198,7 +198,7 @@ screenshots/
 Then add:
 
 ```markdown
-![Phase 3 .CSV_File OUPUT](screenshots/Phase%203%20Output.png)
+![Phase 3 .CSV_File OUPUT](screenshots/Phase%203%20.CSV_File%20OUPUT.png)
 ```
 
 ---
