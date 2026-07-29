@@ -1,0 +1,42 @@
+Incident Response Report
+
+Incident ID: IR-2026-001
+Date: 15 July 2026
+
+Summary:
+An employee reported suspicious activity after receiving a phishing email from
+security-alert@corp-support.net.
+
+Investigation revealed that the employee clicked the following URL:
+
+https://secure-login-update.net/verify
+
+The browser contacted the IP address:
+
+185.199.110.45
+
+The malware downloaded a payload from:
+
+https://downloads.secure-login-update.net/payload.exe
+
+Observed file hashes:
+
+MD5:
+5d41402abc4b2a76b9719d911017c592
+
+SHA1:
+356a192b7913b04c54574d18c28d46e6395428ab
+
+SHA256:
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+The attacker exploited:
+
+CVE-2024-3094
+
+Domains involved:
+
+corp-support.net
+secure-login-update.net
+
+End of report.

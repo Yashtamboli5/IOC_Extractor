@@ -1,0 +1,20 @@
+{
+  "incident_id": "IR-2026-003",
+  "severity": "High",
+  "analyst": "SOC Team",
+  "source_email": "incident@redteam-test.org",
+  "attacker_ip": "203.0.113.51",
+  "destination_ip": "198.51.100.24",
+  "download_url": "https://cdn.redteam-test.org/dropper.exe",
+  "callback_url": "https://api.redteam-test.org/beacon",
+  "domain": "redteam-test.org",
+  "hashes": {
+    "md5": "8f14e45fceea167a5a36dedd4bea2543",
+    "sha1": "ac3478d69a3c81fa62e60f5c3696165a4e65f5d2",
+    "sha256": "ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c"
+  },
+  "cve": [
+    "CVE-2023-23397",
+    "CVE-2022-30190"
+  ]
+}

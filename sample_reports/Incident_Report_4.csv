@@ -1,0 +1,4 @@
+IncidentID,User,Email,IP,Domain,URL,MD5,SHA1,SHA256,CVE
+IR-1001,Alice,alice@finance-helpdesk.org,172.16.20.55,finance-helpdesk.org,https://finance-helpdesk.org/login,900150983cd24fb0d6963f7d28e17f72,a9993e364706816aba3e25717850c26c9cd0d89d,2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824,CVE-2021-44228
+IR-1002,Bob,bob@cloud-sync.net,104.26.15.99,cloud-sync.net,http://cloud-sync.net/update,c3fcd3d76192e4007dfb496cca67e13b,2fd4e1c67a2d28fced849ee1bb76e7391b93eb12,5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8,CVE-2024-3400
+IR-1003,Charlie,charlie@secure-mail.co,13.107.42.16,secure-mail.co,https://secure-mail.co/mail,827ccb0eea8a706c4c34a16891f84e7b,bcbe3365e6ac95ea2c0343a2395834ddf7fdbf5c,6b3a55e0261b0304143f805a249d5f2e7d8b5e5b4f5f7e4e6d4b7c8d1a2f3b4c,CVE-2020-1472

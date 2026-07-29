@@ -1,0 +1,30 @@
+[2026-09-05 09:22:11]
+User john.doe@internal.local reported suspicious login.
+
+Remote IP:
+150.171.22.11
+
+The browser connected to:
+
+https://malicious-update.io/install
+
+Fallback URL:
+
+http://backup.malicious-update.io
+
+Hashes:
+
+MD5:
+45c48cce2e2d7fbdea1afc51c7c6ad26
+
+SHA1:
+77de68daecd823babbb58edb1c8e14d7106e83bb
+
+SHA256:
+3f79bb7b435b05321651daefd374cd21b4f2d9f89f3d1c3d4d9a9e6c0f2a1b8c
+
+Exploited:
+CVE-2023-3519
+
+Domain:
+malicious-update.io

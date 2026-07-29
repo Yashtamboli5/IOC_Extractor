@@ -2,66 +2,131 @@
 
 ## About the Project
 
-IOC Extractor is a Python command-line tool that extracts Indicators of Compromise (IOCs) from incident report text files.
+IOC Extractor is a Python command-line tool that extracts Indicators of Compromise (IOCs) from incident reports.
 
-I created this project as part of my cybersecurity learning journey to improve my Python programming skills and understand how SOC (Security Operations Center) analysts work with incident reports. This project will continue to grow with new features in future phases.
+The tool supports multiple file formats and automatically extracts common cybersecurity indicators such as IP addresses, email addresses, URLs, domains, file hashes, and CVE identifiers.
+
+I built this project as part of my cybersecurity learning journey to improve my Python programming skills, work with regular expressions (Regex), and understand how SOC (Security Operations Center) analysts investigate incident reports.
 
 ---
 
 ## Current Version
 
-**Phase 2 (Completed)**
+**Phase 3 (Completed)**
 
 ---
 
 ## Features
 
-Currently, the tool can extract:
+The tool can extract the following IOCs:
 
-* IPv4 Addresses
-* Email Addresses
-* HTTP/HTTPS URLs
-* Domain Names
-* MD5 Hashes
-* SHA1 Hashes
-* SHA256 Hashes
-* CVE Identifiers
+- IPv4 Addresses
+- Email Addresses
+- HTTP/HTTPS URLs
+- Domain Names
+- MD5 Hashes
+- SHA1 Hashes
+- SHA256 Hashes
+- CVE Identifiers
 
 Additional Features:
 
-* Duplicate Removal
-* File Validation
-* Clean Console Output
+- Support for multiple file formats
+- Duplicate removal
+- File validation
+- Error handling
+- Clean console output
+
+---
+
+## Supported File Formats
+
+The program can read the following file types:
+
+- TXT
+- PDF
+- DOCX
+- CSV
+- JSON
+- LOG
 
 ---
 
 ## Technologies Used
 
-* Python 3
-* Regular Expressions (Regex)
-* File Handling
-* Standard Python Libraries (`re`, `os`)
+- Python 3
+- Regular Expressions (Regex)
+- File Handling
+- JSON
+- CSV
+- pdfplumber
+- python-docx
+
+Python Libraries:
+
+- re
+- os
+- json
+- csv
+- pdfplumber
+- python-docx
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/IOC-Extractor.git
+```
+
+Go to the project folder:
+
+```bash
+cd IOC-Extractor
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install them manually:
+
+```bash
+pip install pdfplumber python-docx
+```
 
 ---
 
 ## How to Run
 
-Run the program using:
+Run the program:
 
 ```bash
 python extractor.py
 ```
 
-The program will ask you to enter the full path of the incident report.
+The program will ask for the full path of the incident report.
 
 Example:
 
 ```text
 Enter the path of the incident report:
-C:\Users\Yash\Documents\incident.txt
+
+C:\Users\Yash\Documents\incident.pdf
 ```
 
-The incident report can be stored anywhere on your computer. The program reads the file directly from the path you provide.
+Supported file formats:
+
+- TXT
+- PDF
+- DOCX
+- CSV
+- JSON
+- LOG
 
 ---
 
@@ -119,25 +184,47 @@ CVE-2025-12345
 
 ![Phase 2 Output](screenshots/Phase%202%20Output.png)
 
+### Phase 3 Output
+
+> Add a screenshot after testing the program with one of the supported file formats (PDF, DOCX, CSV, JSON, or LOG).
+
+Example:
+
+```text
+screenshots/
+└── Phase 3 Output.png
+```
+
+Then add:
+
+```markdown
+![Phase 3 Output](screenshots/Phase%203%20Output.png)
+```
+
 ---
 
 ## Project Structure
 
 ```text
 IOC-Extractor/
-│── extractor.py
-│── README.md
-│── LICENSE
+│
+├── extractor.py
+├── README.md
+├── requirements.txt
+├── LICENSE.txt
 │
 ├── sample_reports/
-│   └── sample_incident.txt
+│   ├── sample_incident.txt
+│   ├── sample_incident.pdf
+│   ├── sample_incident.docx
+│   ├── sample_incident.csv
+│   ├── sample_incident.json
+│   └── sample_incident.log
 │
 ├── screenshots/
-│   ├── Phase 1 File Is Empty.png
-│   ├── Phase 1 File Not Found.png
-│   ├── Phase 1 File Path.png
 │   ├── Phase 1 OUTPUT.png
-│   └── Phase 2 Output.png
+│   ├── Phase 2 Output.png
+│   └── Phase 3 Output.png
 │
 └── tests/
 ```
@@ -148,20 +235,19 @@ IOC-Extractor/
 
 - ✅ Phase 1 Completed
 - ✅ Phase 2 Completed
-- 🚧 Phase 3 Planned
+- ✅ Phase 3 Completed
+- 🚧 Phase 4 Planned
 
-Upcoming features:
+Planned Features:
 
-* IPv6 Address Extraction
-* MAC Address Extraction
-* CSV Export
-* JSON Export
-* Command-line Arguments
-* Support for Multiple Incident Reports
-* Threat Intelligence Integration
-* VirusTotal API Integration
-* AbuseIPDB API Integration
-* PDF and DOCX File Support
+- IPv6 Address Extraction
+- MAC Address Extraction
+- Export Results to CSV
+- Export Results to JSON
+- Command-line Arguments
+- Scan Multiple Files
+- VirusTotal API Integration
+- AbuseIPDB API Integration
 
 ---
 
@@ -169,12 +255,34 @@ Upcoming features:
 
 This project helped me practice:
 
-* Python Programming
-* Regular Expressions (Regex)
-* File Handling
-* Modular Programming
-* Git & GitHub Workflow
-* Cybersecurity Fundamentals
+- Python Programming
+- Regular Expressions (Regex)
+- File Handling
+- Working with PDF files
+- Working with DOCX files
+- Reading JSON data
+- Reading CSV files
+- Modular Programming
+- Error Handling
+- Git & GitHub Workflow
+- Cybersecurity Fundamentals
+
+---
+
+## Requirements
+
+Python 3.10 or later
+
+Required packages:
+
+- pdfplumber
+- python-docx
+
+Install them using:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -183,3 +291,11 @@ This project helped me practice:
 **Developed by Yash Tamboli**
 
 Cybersecurity Student | Python Learner | SOC Enthusiast
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for more information.

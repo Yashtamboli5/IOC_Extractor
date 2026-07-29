@@ -1,0 +1,42 @@
+Cyber Security Incident Report
+
+Date: 22 August 2026
+
+A workstation generated several outbound connections.
+
+Destination IPs observed:
+
+45.77.112.91
+91.198.174.192
+
+The workstation attempted to access:
+
+http://fileshare-sync.org/update
+
+Additional communication occurred with:
+
+https://backup.fileshare-sync.org/api
+
+User account involved:
+
+admin@company-example.com
+
+Malicious executable hashes:
+
+MD5:
+098f6bcd4621d373cade4e832627b4f6
+
+SHA1:
+da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+SHA256:
+9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+
+Known vulnerability:
+
+CVE-2025-1974
+
+Domains:
+
+fileshare-sync.org
+company-example.com
